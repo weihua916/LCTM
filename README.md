@@ -12,8 +12,8 @@ You must have the following already installed on your system.
 ## Input and output 
 The following files are required for inputs.
 
-- Initial concept assignment file: i-th row indicates the initial concept assignment of i-th word type.
-- Word embeddings file: 1st row contains #(vocabulary) and #(dimension of word vectors). From the second row, i-th row contains vector representation for (i-1)-th word type.
+- Initial concept assignment file: i-th row indicates the initial concept assignment of i-th word type. Concept assignments can be initialized by performing k-means clustering on word embeddings.
+- Word embeddings file: 1st row contains #(vocabulary) and #(dimension of word vectors). From the second row, i-th row contains vector representation for (i-1)-th word type. 50 dimensional GloVe vectors trained on Wikipedia were used in the paper.
 - Indexed corpus: Each row contains a list of indices of words contained each document.
 
 The software outputs the following file.
